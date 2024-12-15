@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form  action="" class="w-full h-[100vh] md:h-[400px] flex md:flex-row md:justify-center  flex-col gap-4"> 
+          <div class="md:w-[40%] bg-blue-300 h-full flex flex-col md:my-32 justify-center items-center">
+            <input id="todoInput" class="w-[350px] md:w-[300px] outline-none my-5 mx-auto px-2 py-3 border" type="text" placeholder="What's should be on your list?">
+            <button onclick="showTodo(event)"  id="addTodo" class="py-2 px-4 bg-black-500 text-center rounded-md border"><i class="fa-solid px-3 fa-plus"></i>Add</button>
+          </div>
+          <div class="border md:w-[60%]  h-[100vh] p-5">
+            <h1 class="text-3xl p-4 font-medium">My Todo List</h1>
+            <ul id="todoUl" class="">
+                <li id="todoItem" class=" px-5"></li>
+            </ul>
+          </div>
+    </form>
+<script src="./script.js"></script>
+</body>
+</html>
